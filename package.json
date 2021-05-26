@@ -3,7 +3,7 @@
   "version": "0.9.0",
   "main": "server.js",
   "description": "React . Apollo (GraphQL) . Next.js Toolkit",
-  "author": "Ilker Guller <me@ilkerguller.com> (http://ilkerguller.com)",
+  "author": "Sachin Kumar",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,15 +13,7 @@
     "url": "https://github.com/Sly777/ran/issues"
   },
   "keywords": [
-    "next.js",
-    "react",
-    "graphql",
-    "boilerplate",
-    "apollo",
-    "styled-components",
-    "ran",
-    "run",
-    "toolkit"
+    "next.js"
   ],
   "pre-commit": "lint-staged",
   "lint-staged": {

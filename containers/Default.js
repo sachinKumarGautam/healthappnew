@@ -4,8 +4,8 @@ import { withRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import App from '../components/App';
-import Header from '../components/Header';
-import ProjectInfo from '../components/ProjectInfo';
+// import Header from '../components/Header';
+// import ProjectInfo from '../components/ProjectInfo';
 import NetworkStatus from '../components/NetworkStatus';
 
 type Props = {
@@ -22,9 +22,10 @@ const Default = (props: Props) => (
           ? `${props.title} :: RAN! React . GraphQL . Next.js Toolkit`
           : 'RAN! React . GraphQL . Next.js Toolkit'}
       </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet>
-    <Header pathname={props.router.url.pathname} />
-    <ProjectInfo />
+    {/* <Header pathname={props.router.url.pathname} /> */}
+    {/* <ProjectInfo /> */}
     {props.children}
     <NetworkStatus />
   </App>

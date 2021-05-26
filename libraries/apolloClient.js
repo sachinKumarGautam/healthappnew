@@ -8,6 +8,9 @@ let apolloClient = null;
 
 const httpLink = createHttpLink({
   uri: 'https://api.graph.cool/simple/v1/cj7ke77fv0e9i0122pflagbvx',
+  // fetchOptions: {
+  //   mode: 'no-cors'
+  // },
   credentials: 'include'
 });
 
@@ -22,7 +25,8 @@ function createClient(headers, token, initialState) {
   const authLink = new ApolloLink((operation, forward) => {
     operation.setContext({
       headers: {
-        authorization: accessToken
+        authorization: accessToken,
+        'Access-Control-Allow-Credentials': true
       }
     });
     return forward(operation);
